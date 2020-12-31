@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Rezept.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <title>Lachs Steak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="Salmon.js"></script>
+    <script src="Recipeoftheday.js"></script>
+    <script src="Navbar.js"></script>
+    <script src="Nachrichten.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <nav class="hide-mobile">
+            <!-- Nav-image Start -->
+            <div class="nav-image">
+                <a href="start.index.html"> <img src="img/logo.png" alt="logo" /> </a>
+            </div>
+            <!-- Nav End -->
+            <!-- Navbar Start -->
+            <div class="navbar hide-mobile">
+                <div class="navbar-link"><a href="start.index.html">Start</a></div>
+                <div class="navbar-link">
+                    <a href="#" onclick="loadRecipeOftheDay()">Rezept des Tages</a>
+                </div>
+                <div class="navbar-link"><a href="#">Kontakt</a></div>
+                <div class="navbar-link"><a href="impressum.html">Impressum</a></div>
+            </div>
+            <!-- Navbar End -->
+        </nav>
+
+        <!-- Mobile Menu Start  -->
+        <div id="shadow" class="shadow d-none" onclick="removeShadow()"> </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light show-mobile">
+            <a class="navbar-brand" href="start.index.html">
+                <img class="nav-image" src="img/logo.png" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="overlayMenu()" id="overlayer">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse overlay-menu" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="start.index.html">Start <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="loadRecipeOftheDay()"
+                    >Rezept des Tages</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="impressum.html">Impresum</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content1 content bg1">
+            <h1>
+                <p>Salmon Steak</p>
+            </h1>
+
+            <img class="img" src="img/salmon-518032_1280.jpg" alt="Heidelbeeren-Joghurt" />
+
+            <div class="txt">
+                <p class="">
+                    Das Lachssteak schmeckt fantastisch und ist ohne großen Aufwand schnell zubereitet. Ein super köstliches und einfaches Rezept.
+                </p>
+            </div>
+        </div>
+
+        <div class="content bg2">
+            <h3 class="head ingred">
+                Zutaten für
+                <input type="number" min="1" id="portions" class="form-control" placeholder="1" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+
+                <button class="btn btn-success" title="Berechnen" onclick="calculate()" Berechnen>
+          Portion/en
+        </button>
+            </h3>
+            <table class="ingredients">
+                <tr class="bg3 tr">
+                    <td class="span"><span id="Salmon"> 1 </span> Stk Lachssteak</td>
+                </tr>
+
+                <tr class="bg4 tr">
+                    <td class="span"><span id="Cherry"> 100 </span> g Kirschtomaten</td>
+                </tr>
+
+                <tr class="bg3 tr">
+                    <td class="span"><span id="Onion"> 0.5 </span> Stk Zwiebel</td>
+                </tr>
+
+                <tr class="bg4 tr">
+                    <td class="span"><span id="Basil"> 0.25 </span> Bund Basilikum</td>
+                </tr>
+
+                <tr class="bg3 tr">
+                    <td class="span"><span id="Olives"> 0.5 </span> EL Olivenöl</td>
+                </tr>
+
+                <tr class="bg4 tr">
+                    <td class="span"><span id="Broth"> 32.5 </span> ml Gemüsebrühe</td>
+                </tr>
+
+                <tr class="bg4 tr">
+                    <td class="span">Salz und Pfeffer</td>
+                </tr>
+
+                <tr class="bg3 tr">
+                    <td class="span">
+                        <span id=" Zitrus "> 1 </span> Spr Zitronen (Saft)
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content bg1">
+            <h3 class="head">Nährwerte pro Portion</h3>
+            <p class="info"> nicht angegeben </p>
+        </div>
+
+        <div class="content bg2">
+            <h3 class="head">Zubereitung</h3>
+
+            <p class="info">Arbeitszeit 10 Minuten | Kochzeit 20 min| Gesamtzeit 35 Minuten </p>
+        </div>
+
+        <div class="content bg1">
+            <p class="contenttxt">
+                <br /> Geschälte Zwiebel fein hacken und Basilikumblätter grob zerkleinern.
+                <br />
+                <br /> Lachs waschen, trocken tupfen, ringsum mit Salz und Zitronensaft würzen.. <br />
+                <br /> In einer Pfanne Öl erhitzen und Lachssteak von beiden Seiten 5 Minuten braten. Zwiebelwürfel in die Pfanne geben und anrösten. Tomaten beigeben und mit Gemüsebrühe ablöschen, kurz garen. Mit Salz und Pfeffer abschmecken und die
+                Basilikumblätter einstreuen.
+
+                <br />
+                <br /> Als Beilage reicht man dazu Kartoffeln, Teigwaren oder Reis.
+            </p>
+        </div>
+        <div class="content bg2">
+
+            <input type="text" class="inputfield" name="name" placeholder='Dein Name' id="name"> <br>
+            <input type="text" class="inputfield" name="New Post..." placeholder="Dein Betreff" id="title">
+            <textarea class="form-control textarea" type="textare" name="textarea" id="textarea" placeholder="Dein Kommentar..." aria-label="With textarea"> </textarea>
+
+            <button onclick="addpost()"> Posten</button>
+
+
+            <div class="content bg1 myposts" id="myposts"></div>
+
+        </div>
+
+        <div class="footer-child">
+            <div>
+                <img class="footer-img" src=" img/logo.png " alt=" logo " />
+            </div>
+
+            <div class="footer-container">
+                <a href=" impressum.html ">Impressum </a> |
+                <a href=" datenschutz.html "> Datenschutz </a>|
+                <a href=" # ">Kontakt </a>
+            </div>
+        </div>
+</body>
+
+</html>

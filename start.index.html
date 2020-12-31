@@ -1,0 +1,177 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="start.style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="Recipeoftheday.js">
+    </script>
+    <script src="Navbar.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <nav class="hide-mobile">
+        <!-- Nav-image Start -->
+        <div class="nav-image">
+            <a href="start.index.html"> <img src="img/logo.png" alt="logo" /> </a>
+        </div>
+        <!-- Nav End -->
+        <!-- Navbar Start -->
+        <div class="navbar hide-mobile">
+            <div class="navbar-link"><a href="start.index.html">Start</a></div>
+            <div class="navbar-link"><a href="#" onclick="loadRecipeOftheDay()">Rezept des Tages</a></div>
+            <div class="navbar-link"><a href="#">Kontakt</a></div>
+            <div class="navbar-link"><a href="impressum.html">Impressum</a></div>
+        </div>
+        <!-- Navbar End -->
+    </nav>
+
+
+    <!-- Mobile Menu Start  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light show-mobile">
+        <a class="navbar-brand " href="start.index.html">
+            <img class="nav-image" src="img/logo.png" alt="" /></a>
+        <button class="  navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="overlayMenu()" id="overlayer">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="start.index.html">Start <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="loadRecipeOftheDay()">Rezept des Tages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="impressum.html">Impresum</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div id="shadow" class="shadow d-none" onclick="removeShadow()">
+
+    </div>
+
+    <div class="Kochwelt-description">
+        <h2 class="hd2">Was ist Kochwelt ?</h2>
+        <p class="text">
+
+            Bei Kochwelt findest du verschiedene Kochrezepte von regionalem Essen, bis hin zu zu Internationalen Speißen für den Gaumenschmauss.
+
+        </p>
+
+        <div class="btns">
+
+
+            <a title=ScrollDown class="btn btn-success" href="#Recipes" role="button">
+                Zu den Rezepten
+            </a>
+
+
+
+
+            <a title=Öffnen class="btn btn-success" href="#" onclick="loadRecipeOftheDay()"> Rezept des
+                Tages </a>
+        </div>
+
+        <p class="text">
+
+            Hast du eine Rezeptidee, welche die Welt kennenlernen muss ?
+        </p>
+
+        <a title="Öffnen" class="btn btn-success" href="#"> Kontaktiere uns! </a>
+    </div>
+
+    <div class="Recipes-main" id="Recipes">
+        <div class="head">
+
+            <h2 class="hd2">Rezepte</h2>
+        </div>
+
+        <div class="intro-section">
+
+            <div class="recipe">
+                <a href="#"><img class="img-recipe" src="img/pexels-daria-shevtsova-704569.jpg" alt=""> </a>
+                <p class="text">Avocado Eier Sandwich </p>
+
+            </div>
+            <div class="recipe">
+                <a href="Nudeln-Parmesan.html"><img class="img-recipe" src="img/pexels-sebastian-coman-photography-3590401.jpg" alt="">
+                </a>
+                <p class="text">Schinken Parmesan Nudeln</p>
+
+            </div>
+            <div class="recipe">
+                <a href="Rezept-Heidelbeerenjoghurth.html"><img class="img-recipe" src="img/pexels-pixabay-414262.jpg" alt=""> </a>
+                <p class="text">Heidelbeeren-joghurt</p>
+
+            </div>
+            <div class="recipe">
+                <a href="#"><img class="img-recipe" src="img/salad.jpg" alt=""> </a>
+                <p class="text">Griechischer Bauernsalat</p>
+
+            </div>
+
+            <div class="recipe">
+                <a href="Tomaten-Avocado.html"><img class="img-recipe" src="img/pexels-bulbfish-1143754.jpg" alt="">
+                </a>
+                <p class="text">Tomaten Avocado Brot
+                </p>
+
+            </div>
+            <div class="recipe">
+                <a href="Lachs-Steak.html"><img class="img-recipe" src="img/salmon-518032_1280.jpg" alt=""> </a>
+                <p class="text">Lachs Steak</p>
+
+            </div>
+            <div class="recipe">
+                <a href="#"><img class="img-recipe" src="img/asparagus-2169305_1280.jpg" alt=""> </a>
+                <p class="text">Spargel Time</p>
+
+            </div>
+            <div class="recipe">
+                <a href="#"><img class="img-recipe" src="img/eclair-3366430_1280.jpg" alt=""> </a>
+
+                <p class="text">Eclair Sahne Erdbeeren</p>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="footer-child">
+        <div>
+            <img class="footer-img" src="img/logo.png" alt="logo" />
+
+        </div>
+
+        <div class="footer-container">
+            <a href="impressum.html">Impressum  |</a> <a href="datenschutz.html"> Datenschutz | </a>
+            <a href="#">Kontakt </a>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

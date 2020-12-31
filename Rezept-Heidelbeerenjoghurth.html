@@ -1,0 +1,170 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Rezept.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <title>Rezpet-Heidelbeeren-Joghurt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="rezept-Heidelbeeren.js"></script>
+    <script src="Recipeoftheday.js"></script>
+    <script src="Navbar.js"></script>
+    <script src="Nachrichten.js"></script>
+</head>
+
+<body>
+    <nav class="hide-mobile">
+        <!-- Nav-image Start -->
+        <div class="nav-image">
+            <a href="start.index.html"> <img src="img/logo.png" alt="logo" /> </a>
+        </div>
+        <!-- Nav End -->
+        <!-- Navbar Start -->
+        <div class="navbar hide-mobile">
+            <div class="navbar-link"><a href="start.index.html">Start</a></div>
+            <div class="navbar-link">
+                <a href="#" onclick="loadRecipeOftheDay()">Rezept des Tages</a>
+            </div>
+            <div class="navbar-link"><a href="#">Kontakt</a></div>
+            <div class="navbar-link"><a href="impressum.html">Impressum</a></div>
+        </div>
+        <!-- Navbar End -->
+    </nav>
+
+    <!-- Mobile Menu Start  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light show-mobile">
+        <a class="navbar-brand" href="start.index.html">
+            <img class="nav-image" src="img/logo.png" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="overlayMenu()" id="overlayer">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse overlay-menu" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="start.index.html">Start <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="loadRecipeOftheDay()"
+              >Rezept des Tages</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="impressum.html">Impresum</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div id="shadow" class="shadow d-none" onclick="removeShadow()"> </div>
+    <div class="content1 content bg1">
+        <h1 class="head">
+            <p>Heidelbeeren Joghurt</p>
+        </h1>
+
+        <img class="img" src="img/pexels-pixabay-414262.jpg" alt="Heidelbeeren-Joghurt" />
+
+        <div class="txt">
+            <p class="">Für einen gesunden Start in den Tag</p>
+        </div>
+    </div>
+
+    <div class="content bg2">
+        <h3 class="head ingred">
+            Zutaten für
+
+            <input type="number" min="1" id="portions" class="form-control" placeholder="1" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+
+            <button class="btn btn-success" title="Berechnen" onclick="calculate()" Berechnen>
+          Portion/en
+        </button>
+        </h3>
+
+        <table class="ingredients">
+            <tr class="bg3 tr">
+                <td class="span"><span id="Honey"> 1.5</span> EL Honig</td>
+            </tr>
+
+            <tr class="bg2 tr">
+                <td class="span"><span id="Walnuts"> 15 </span> g Walnüsse</td>
+            </tr>
+
+            <tr class="bg3 tr">
+                <td class="span"><span id="Almon"> 15 </span> g Mandelbkättchen</td>
+            </tr>
+
+            <tr class="bg2 tr">
+                <td class="span"><span id="Pine"> 1.5 </span> EL Pinienkerne</td>
+            </tr>
+
+            <tr class="bg3 tr">
+                <td class="span">
+                    <span id="Blueberries"> 2 </span> EL Heidelbeeren
+                </td>
+            </tr>
+
+            <tr class="bg2 tr">
+                <td class="span"><span id="Yoghurt"> 100 </span> g Joghurt</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="content bg1">
+        <h3 class="head">Nährwerte pro Portion</h3>
+
+        <p class="info">
+            kcal 362 | Eiweiß 9,11 g| Fett 22,51 g| Kohlenhydr. 30,82 g
+        </p>
+    </div>
+
+    <div class="content bg2">
+        <h3 class="head">Zubereitung</h3>
+
+        <p class="info">Arbeitszeit ca. 10 Minuten | Gesamtzeit ca. 10 Minuten</p>
+    </div>
+
+    <div class="content bg1">
+        <p class="contenttxt">
+            Den Honig in einem kleinen Topf erwärmen und vom Herd nehmen. Die Walnüsse, Mandelblättchen und Pinienkerne dazugeben. <br />
+            <br /> Verrühren, so dass alles gut mit dem Honig bedeckt ist und etwas abkühlen lassen. <br />
+            <br /> Joghurt in ein Schälchen geben und gleichmäßig die Honigmischung darauf verteilen. <br />
+            <br /> Dazu 2 El Heidelbeeren darauf verteilen und zum Frühstück servieren.
+            <br />
+            <br /> Man kann natürlich mehr oder weniger Honig nehmen.
+        </p>
+    </div>
+    <div class="content bg2">
+
+        <input type="text" class="inputfield" name="name" placeholder='Dein Name' id="name"> <br>
+        <input type="text" class="inputfield" name="New Post..." placeholder="Dein Betreff" id="title">
+        <textarea class="form-control textarea" type="textare" name="textarea" id="textarea" placeholder="Dein Kommentar..." aria-label="With textarea"> </textarea>
+
+        <button onclick="addpost()"> Posten</button>
+
+
+        <div class=" bg2 myposts" id="myposts"></div>
+
+    </div>
+
+
+
+    <div class="footer-child">
+        <div>
+            <img class="footer-img" src="img/logo.png" alt="logo" />
+        </div>
+
+        <div class="footer-container">
+            <a href="impressum.html">Impressum </a> |
+            <a href="datenschutz.html"> Datenschutz </a>|
+            <a href="#">Kontakt </a>
+        </div>
+    </div>
+</body>
+
+</html>

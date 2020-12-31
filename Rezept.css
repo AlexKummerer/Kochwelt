@@ -1,0 +1,190 @@
+                @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+                html {
+                    scroll-behavior: smooth;
+                    font-family: "Lora", serif;
+                }
+                
+                body {
+                    margin: 0;
+                }
+                
+                .img {
+                    width: 600px;
+                    height: 400px;
+                    object-fit: cover;
+                    border-radius: 25px;
+                }
+                
+                .txt {
+                    display: flex;
+                    padding: 32px;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                .content {
+                    font-size: 18px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    color: rgba(44, 43, 43, 0.842);
+                    padding-bottom: 32px;
+                    padding-top: 32px;
+                }
+                
+                .bg1 {
+                    background-color: #f7f7f7;
+                }
+                
+                .bg2 {
+                    background-color: rgba(201, 198, 198, 0.25);
+                }
+                
+                .bg3 {
+                    background-color: rgba(223, 216, 204, 0.25);
+                }
+                
+                .ingredients {
+                    font-size: 18px;
+                    color: rgba(44, 43, 43, 0.842);
+                    width: 60%;
+                    padding: 32px;
+                    margin-top: 32px;
+                }
+                
+                .input {
+                    font-size: 18px;
+                    width: 70px;
+                    height: 40px;
+                    padding: 8px;
+                    border-radius: 15px;
+                }
+                
+                .tr {
+                    border-radius: 15px;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 32px;
+                }
+                
+                .span {
+                    padding: 20px;
+                    border-radius: 15px;
+                    padding-left: 40%;
+                }
+                
+                .ingred {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .head {
+                    color: black;
+                    font-size: 2rem;
+                }
+                
+                .form-control {
+                    width: 15%;
+                    margin-left: 16px;
+                }
+                
+                .contenttxt {
+                    width: 40%;
+                }
+                
+                .inputfield {
+                    width: 40% !important;
+                }
+                
+                .textarea {
+                    width: 40% !important;
+                    height: 150px;
+                    margin: 32px;
+                }
+                
+                .myposts {
+                    font-size: 18px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: rgba(44, 43, 43, 0.842);
+                    padding-bottom: 32px;
+                    padding-top: 32px;
+                    position: relative;
+                    width: 40%;
+                    align-items: flex-start !important;
+                    max-height: 350px;
+                    overflow: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                .post {
+                    width: 100%;
+                    height: 150px;
+                    border: 1px solid lightgray;
+                    margin-bottom: 16px;
+                }
+                
+                @media (max-width:1000px) {
+                    .img-recipe {
+                        width: 8em !important;
+                        height: 8em !important;
+                    }
+                    .head {
+                        font-size: 2em;
+                    }
+                    .img {
+                        width: 25em;
+                        height: 15em;
+                    }
+                    .span {
+                        padding-left: 30%;
+                    }
+                    .txt {
+                        font-size: 1.5em;
+                        padding-right: 1em;
+                        padding-left: 1em;
+                    }
+                    .contenttxt {
+                        font-size: 1em;
+                        width: 80%;
+                    }
+                    input {
+                        font-size: 1.25em !important;
+                    }
+                    .form-control {
+                        width: 2.5em;
+                        height: 1.5em;
+                    }
+                    .btn {
+                        width: 5.5em !important;
+                        height: 2em !important;
+                        font-size: 0.75em;
+                    }
+                    .ingredients {
+                        font-size: 1.5em;
+                        width: 90%;
+                    }
+                    .info {
+                        font-size: 1.5em;
+                        padding-right: 3.5em;
+                        padding-left: 3.5em;
+                    }
+                    .inputfield {
+                        width: 70% !important;
+                    }
+                    .form-control {
+                        height: 6em;
+                    }
+                    .textarea {
+                        width: 70% !important;
+                    }
+                    .myposts {
+                        width: 70% !important;
+                    }
+                }
